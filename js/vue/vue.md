@@ -52,9 +52,9 @@ router.beforeEach((to, from, next) => {
     const vm = this;
     const api = `${process.env.VUE_APP_API}/api/user/check`;
     axios.post(api).then(response => {
-      if (response.data.success) { 如果面有加這個需驗證才放行
+      if (response.data.success) { //如果面有加這個需驗證才放行
         next();
-      } else { 其他導回填寫頁面
+      } else { //其他導回填寫頁面
         next({
           path: '/login' 
         });

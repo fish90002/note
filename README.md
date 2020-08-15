@@ -1,3 +1,4 @@
-## js
+js
+---
 
-- [《vue》](js/vue/vue.md)
+[《vue》](js/vue/vue.md)
