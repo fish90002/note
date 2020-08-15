@@ -1,12 +1,14 @@
 
 
-**環境變數
+環境變數
+---
 .env.development 測試用   VUE_APP_自訂=內容
 .env.production 開發用  
  -讀取  process.env.VUE_APP_設置的自訂
 
-**常用依賴
-***bootstrap 
+常用依賴
+---
+**bootstrap**
 npm install bootstrap jquery popper.js --save 
 
 main.js 增加 
@@ -14,7 +16,7 @@ import 'bootstrap'; // Import js file
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import css file
 
 
-***axios
+**axios**
 
 npm install --save axios vue-axios
 
@@ -22,7 +24,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
 
-***使用方法
+使用方法
 this.$http.get(api).then((response) => {
   console.log(response.data)
 })
