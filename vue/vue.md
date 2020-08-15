@@ -1,4 +1,13 @@
 
+安裝
+---
+npm install -g @vue/cli  //cli安裝
+
+npm install -g @vue/cli-service-global  //快速原型開發
+
+**使用**
+vue serve index.vue
+vue build index.vue
 
 環境變數
 ---
@@ -8,7 +17,7 @@
 
 常用依賴
 ---
-**bootstrap**
+## bootstrap
 npm install bootstrap jquery popper.js --save 
 
 main.js 增加 
@@ -16,7 +25,7 @@ import 'bootstrap'; // Import js file
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import css file
 
 
-**axios**
+## axios
 
 npm install --save axios vue-axios
 

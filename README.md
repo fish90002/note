@@ -1,6 +1,9 @@
 js
 ---
-[《vue》](js/vue/vue.md)
+
+vue
+---
+[《vue》](vue/vue.md)
 
 css
 ---
