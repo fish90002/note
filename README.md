@@ -1,7 +1,7 @@
 js
 ---
 [《JS》](JS/JS.md)
-vue
+
 ---
 [《vue》](vue/vue.md)
 
@@ -12,4 +12,4 @@ css
 PHP
 ---
 [《PHP》](PHP/PHP.md)
-[《PHP》](PHP/MySQL.md)
+[《MySQL》](PHP/MySQL.md)
