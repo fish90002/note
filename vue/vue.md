@@ -5,15 +5,16 @@ npm install -g @vue/cli  //cli安裝
 
 npm install -g @vue/cli-service-global  //快速原型開發
 
-**使用**
-vue serve index.vue
-vue build index.vue
+**原型開發指令**
+- vue serve index.vue
+- vue build index.vue
 
 環境變數
 ---
-.env.development 測試用   VUE_APP_自訂=內容
-.env.production 開發用  
- -讀取  process.env.VUE_APP_設置的自訂
+- .env.development 測試用   
+- .env.production 開發用 
+> VUE_APP_自訂=內容
+>> 讀取 process.env.VUE_APP_設置的自訂
 
 常用依賴
 ---
