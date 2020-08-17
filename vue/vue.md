@@ -33,35 +33,40 @@
 
 - npm install --save axios vue-axios
 
-import axios from 'axios'
-import VueAxios from 'vue-axios'
-Vue.use(VueAxios, axios)
+> - import axios from 'axios'
+> - import VueAxios from 'vue-axios'
+> - Vue.use(VueAxios, axios)
 
-使用方法
+> #### 使用方法
+```js
 this.$http.get(api).then((response) => {
   console.log(response.data)
 })
+```
+
+
+vue-router
+---
+
+- 切換路由
+```js
+this.$router.push('/路徑'); // 切換到指定頁面
+```
 
 
 
-登入
-if (response.data.success) {
-   vm.$router.push('/'); // 切換頁面
-}
-
-
-
-router index.js
-// 防止亂打 進入不存在的頁面
-```javascript
+- router index.js
+```js
+// 防止進入不存在的頁面
 {
   path: '*',
   redirect: '/'
-}
+},
+
 ```
 
-main.js  導航守衛
-```javascript
+- main.js 導航守衛
+```js
 router.beforeEach((to, from, next) => {
   if (to.meta.requiresAuth) {
     const vm = this;
