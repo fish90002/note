@@ -1,9 +1,9 @@
 
 安裝
 ---
-npm install -g @vue/cli  //cli安裝
+- npm install -g @vue/cli  //cli安裝
 
-npm install -g @vue/cli-service-global  //快速原型開發
+- npm install -g @vue/cli-service-global  //快速原型開發
 
 **原型開發指令**
 - vue serve index.vue
@@ -11,24 +11,27 @@ npm install -g @vue/cli-service-global  //快速原型開發
 
 環境變數
 ---
-- .env.development 測試用   
-- .env.production 開發用 
+### 測試用  
+- .env.development  
+### 開發用
+- .env.production  
 > VUE_APP_自訂=內容
->> 讀取 process.env.VUE_APP_設置的自訂
+### 讀取
+- process.env.VUE_APP_設置的自訂
 
 常用依賴
 ---
-## bootstrap
-npm install bootstrap jquery popper.js --save 
+### bootstrap
+- npm install bootstrap jquery popper.js --save 
 
-main.js 增加 
-import 'bootstrap'; // Import js file
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import css file
+- main.js 增加 
+> - import 'bootstrap';
+> - import 'bootstrap/dist/css/bootstrap.min.css'; // Import css file
 
 
-## axios
+### axios
 
-npm install --save axios vue-axios
+- npm install --save axios vue-axios
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
