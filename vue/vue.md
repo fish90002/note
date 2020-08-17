@@ -51,6 +51,7 @@ vue-router
 - 切換路由
 ```js
 this.$router.push('/路徑'); // 切換到指定頁面
+this.$router.back(); // 返回到前一個頁面
 ```
 
 
@@ -92,3 +93,13 @@ router.beforeEach((to, from, next) => {
     meta: { requiresAuth: true } //確認是否要阻擋
   },
   ```
+
+
+git路徑
+---
+新增vue.config.js檔案
+```js
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/git專案名稱/' : '/'
+};
+```
