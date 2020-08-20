@@ -1,6 +1,6 @@
 js
 ---
-- [《JS》](JS/JS.md)
+- [《JS》](js/js.md)
 - [《vue》](vue/vue.md)
 
 css
