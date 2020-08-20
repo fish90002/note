@@ -63,6 +63,18 @@ this.$router.back(); // 返回到前一個頁面
   path: '*',
   redirect: '/'
 },
+{
+   path: '/', //路徑
+   name: '', //名稱
+   component: Home,
+   children: [  //子元件
+     {
+       path: '/about', //如果有增加子元件 主元件沒設置那就等同於主元件預設 
+       name: '', 
+       component: //元件
+     }
+   ]
+ }
 
 ```
 
