@@ -18,23 +18,25 @@ $x = '123';
 
 ## 表單
 
-表單不能混用，methods 是什麼 \$\_就是什麼
+**表單不能混用，methods 是什麼 $_就是什麼**
+### 取得參數
 ```php
 $_GET['表單的name'];
 $_POST['表單的 name'];
 ```
+### 表單範例
+```php
 // 前端
-<from methods="" action="傳送到哪邊">
-methods = GET，POST
-<input name="送過去的參數"/>
+<from methods="GET，POST" action="傳送到哪邊">
+   <input name="傳送過去的參數"/>
 </from>
 
-//如果是空值
-if (empty(\$\_POST['name'])) {
+後端
+if (empty(\$\_POST['name'])) { //如果是空值
 echo ' 錯誤';
 exit(); // 不在跑下面的程式
 }
-
+```
 ## 與 MySQL 連線
 ```php
 $servername = '';
