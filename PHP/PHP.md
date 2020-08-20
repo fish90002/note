@@ -1,0 +1,48 @@
+## 安裝
+
+https://www.apachefriends.org/zh_tw/index.html
+
+- 資料夾 htdocs 下新增自己的資料夾
+
+## 基本
+
+變數 \$x = '123';
+
+## 表單
+
+表單不能混用，methods 是什麼 \$\_就是什麼
+
+$_GET['表單的name'];
+$\_POST['表單的 name'];
+
+isset()函數是用來判斷變數是不是有存在，如果有就回傳 1(true)，
+如果沒有就回傳空值
+
+empty()函數用來判斷"值"是不是空的，如果沒有就回傳 1(true)，如果有"值"就不回傳
+
+// 前端
+<from methods="" action="傳送到哪邊">
+methods = GET，POST
+<input name="送過去的參數"/>
+</from>
+
+//如果是空值
+if (empty(\$\_POST['name'])) {
+echo ' 錯誤';
+exit(); // 不在跑下面的程式
+}
+
+## 與 MySQL 連線
+
+$servername = '';
+$name = '';
+$password = '';
+$dbname = '';
+\$conn = new mysqli('serve 的名稱','帳號','密碼','database')
+
+if ($conn->connect_error) {
+   die('資料庫連線錯誤:' . $conn->connect_error); // 輸出文字後 後面的都不會執行
+}
+
+外部連接
+require_once('要連接的 php');
