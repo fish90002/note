@@ -25,12 +25,13 @@ $_GET['表單的name'];
 $_POST['表單的 name'];
 ```
 ### 表單範例
-```php
+```html
 // 前端
 <from methods="GET，POST" action="傳送到哪邊">
    <input name="傳送過去的參數"/>
 </from>
-
+```
+```php
 後端
 if (empty(\$\_POST['name'])) { //如果是空值
 echo ' 錯誤';
