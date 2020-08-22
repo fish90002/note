@@ -105,8 +105,23 @@ router.beforeEach((to, from, next) => {
     meta: { requiresAuth: true } //確認是否要阻擋
   },
   ```
+- 命名路由 
+```js
+//app.vue
+<router view name="自訂名稱" />
+<router view /> 原本的
 
-
+// router > index.js
+{
+  path: '/about',
+  name: 'About',
+  components: {
+     default: () => import('../views/About.vue'), //原本的router
+     card: () => import('../views/menu.vue') // 自定義的router
+  //router的name + import     
+   }
+ }
+```
 git路徑
 ---
 新增vue.config.js檔案
