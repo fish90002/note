@@ -26,7 +26,7 @@
 
 - main.js 增加 
 > - import 'bootstrap';
-> - import 'bootstrap/dist/css/bootstrap.min.css'; // Import css file
+> - import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ### axios
