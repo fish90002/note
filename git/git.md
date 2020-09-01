@@ -1,17 +1,21 @@
 基礎設定
-
-查詢版本
+---
+- 查詢版本 
+`
 git version
+`
+
+- 查詢設定列表 
+`git config --list`
+
+- 輸入姓名
+`git config --global user.name "你的名字"`
  
-查詢設定列表
-git config --list
- 
-輸入姓名
-git config --global user.name "你的名字"
- 
-輸入email
-git config --global user.email "你的email"
+- 輸入email
+`git config --global user.email "你的email"`
+
 新增本地/遠端數據庫
+---
 
 在本地資料夾新增數據庫
 git init
@@ -34,7 +38,9 @@ git log
  
 將索引提交到數據庫
 git commit -m '更新訊息'
+
 還原指令
+---
 
 還原工作目錄與索引，會跟最後一次 commit 保持一樣
 git reset --hard 
@@ -59,7 +65,9 @@ git reset --soft HEAD^
  
 commit 後發現有幾個檔案忘了加入進去，想要補內容進去時
 git commit --amend 
+
 分支
+---
 
 顯示所有本地分支
 git branch
@@ -75,8 +83,9 @@ git merge 分支名稱
  
 刪除分支
 git branch -d 分支名稱
-遠端數據庫操作
 
+遠端數據庫操作
+---
 複製遠端數據庫
 git clone 遠端數據庫網址
  
@@ -88,7 +97,9 @@ git push 遠端數據庫名稱 遠端分支名稱
  
 將遠端分支拉下來與本地分支進行合併
 git pull
+
 標籤
+---
 
 查詢標籤
 git tag
@@ -104,8 +115,9 @@ git tag 標籤名稱
  
 新增標示標籤
 git tag -am "備註內容" 標籤名稱
-暫存
 
+暫存
+---
 暫時儲存當前目錄
 git stash
  
