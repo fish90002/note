@@ -7,30 +7,37 @@ https://www.apachefriends.org/zh_tw/index.html
 ## 基本
 
 變數
+
 ```php
 $x = '123';
 ```
 
 基本函數
+
 - isset()函數是用來判斷變數是不是有存在，如果有就回傳 1(true)，如果沒有就回傳空值
 
 - empty()函數用來判斷"值"是不是空的，如果沒有就回傳 1(true)，如果有"值"就不回傳
 
 ## 表單
 
-**表單不能混用，methods 是什麼 $_就是什麼**
+**表單不能混用，methods 是什麼 \$\_就是什麼**
+
 ### 取得參數
+
 ```php
 $_GET['表單的name'];
 $_POST['表單的 name'];
 ```
+
 ### 表單範例
-```html
+
+```js
 // 前端
 <from methods="GET，POST" action="傳送到哪邊">
-   <input name="傳送過去的參數"/>
+  <input name="傳送過去的參數" />
 </from>
 ```
+
 ```php
 後端
 if (empty(\$\_POST['name'])) { //如果是空值
@@ -38,7 +45,9 @@ echo ' 錯誤';
 exit(); // 不在跑下面的程式
 }
 ```
+
 ## 與 MySQL 連線
+
 ```php
 $servername = '';
 $name = '';
@@ -51,6 +60,7 @@ if ($conn->connect_error) {
    die('資料庫連線錯誤:' . $conn->connect_error); // 輸出文字後 後面的都不會執行
 }
 ```
+
 ## 外部連接
 
 - 發生錯誤只會跳警告
