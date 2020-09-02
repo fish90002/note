@@ -20,11 +20,10 @@ $x = '123';
 
 ## 表單
 
-**表單不能混用，methods 是什麼 \$\_就是什麼**
 
 ### 取得參數
 
-```php
+```PHP
 $_GET['表單的name'];
 $_POST['表單的 name'];
 ```
@@ -33,14 +32,14 @@ $_POST['表單的 name'];
 
 ```js
 // 前端
-<from methods="GET，POST" action="傳送到哪邊">
+<from method="GET，POST" action="傳送到哪邊">
   <input name="傳送過去的參數" />
 </from>
 ```
 
-```php
+```PHP
 後端
-if (empty(\$\_POST['name'])) { //如果是空值
+if (empty($_POST['name'])) { //如果是空值
 echo ' 錯誤';
 exit(); // 不在跑下面的程式
 }
