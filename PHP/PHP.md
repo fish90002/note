@@ -53,6 +53,7 @@ $_POST['表單的 name'];
 ## 與 MySQL 連線
 
 ```php
+<?php
 $servername = '';
 $name = '';
 $password = '';
@@ -63,6 +64,10 @@ $conn = new mysqli('serve 的名稱','帳號','密碼','database')
 if ($conn->connect_error) {
    die('資料庫連線錯誤:' . $conn->connect_error); // 輸出文字後 後面的都不會執行
 }
+//database的設定
+$conn->query('SET NAMES UTF8');
+$conn->query('SET time_zone = "+8:00"');
+?>
 ```
 
 ## 外部連接
