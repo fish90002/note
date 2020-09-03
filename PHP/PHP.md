@@ -32,17 +32,22 @@ $_POST['表單的 name'];
 
 ```js
 // 前端
-<from method="GET，POST" action="傳送到哪邊">
-  <input name="傳送過去的參數" />
-</from>
+<form action="傳送到哪個PHP" method="GET&POST">
+　<input type="text" name="傳送的參數">
+　<input type="submit" value="送出表單">
+</form>
 ```
 
 ```PHP
 後端
-if (empty($_POST['name'])) { //如果是空值
-echo ' 錯誤';
-exit(); // 不在跑下面的程式
-}
+<?php
+  if (empty($_POST['傳送的參數'])) { //如果是空值
+  echo ' 錯誤';
+  exit(); // 不在跑下面的程式
+  }
+
+  echo $_POST&GET['傳送的參數'];
+?>
 ```
 
 ## 與 MySQL 連線
