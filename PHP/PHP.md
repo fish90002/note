@@ -33,8 +33,8 @@ $_POST['表單的 name'];
 ```js
 // 前端
 <form action="傳送到哪個PHP" method="GET&POST">
-　<input type="text" name="傳送的參數">
-　<input type="submit" value="送出表單">
+  <input type="text" name="傳送的參數" id="">
+  <input type="submit" value="送出">
 </form>
 ```
 
