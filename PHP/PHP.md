@@ -20,7 +20,10 @@ $x = '123';
 
 ## 表單
 
+<<<<<<< HEAD
 **表單不能混用，methods 是什麼 $_就是什麼**
+=======
+>>>>>>> d089724a74ec245db7fc349310c64508dddfea2d
 
 ### 取得參數
 
@@ -33,22 +36,39 @@ $_POST['表單的 name'];
 
 ```js
 // 前端
-<from methods="GET，POST" action="傳送到哪邊">
-  <input name="傳送過去的參數" />
-</from>
+<form action="傳送到哪個PHP" method="GET&POST">
+  <input type="text" name="傳送的參數" id="">
+  <input type="submit" value="送出">
+</form>
 ```
 
 ```PHP
 後端
+<<<<<<< HEAD
 if (empty($_POST['name'])) { //如果是空值
 echo ' 錯誤';
 exit(); // 不在跑下面的程式
 }
+=======
+<?php
+  if (empty($_POST['傳送的參數'])) { //如果是空值
+  echo ' 錯誤';
+  exit(); // 不在跑下面的程式
+  }
+
+  echo $_POST&GET['傳送的參數'];
+?>
+>>>>>>> d089724a74ec245db7fc349310c64508dddfea2d
 ```
 
 ## 與 MySQL 連線
 
+<<<<<<< HEAD
 ```PHP
+=======
+```php
+<?php
+>>>>>>> d089724a74ec245db7fc349310c64508dddfea2d
 $servername = '';
 $name = '';
 $password = '';
@@ -59,10 +79,17 @@ $conn = new mysqli('serve 的名稱','帳號','密碼','database')
 if ($conn->connect_error) {
    die('資料庫連線錯誤:' . $conn->connect_error); // 輸出文字後 後面的都不會執行
 }
+<<<<<<< HEAD
 
 $conn->query('SET NAMES UTF8');
 $conn->query('SET time_zone = "+8:00"');
 
+=======
+//database的設定
+$conn->query('SET NAMES UTF8');
+$conn->query('SET time_zone = "+8:00"');
+?>
+>>>>>>> d089724a74ec245db7fc349310c64508dddfea2d
 ```
 
 ## 外部連接
