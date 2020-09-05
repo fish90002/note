@@ -42,16 +42,17 @@ $_POST['表單的 name'];
 
 ```PHP
 後端
+<?php
 if (empty($_POST['name'])) { //如果是空值
 echo ' 錯誤';
 exit(); // 不在跑下面的程式
 }
-<?php
-  if (empty($_POST['傳送的參數'])) { //如果是空值
-  echo ' 錯誤';
-  exit(); // 不在跑下面的程式
-  }
-  echo $_POST&GET['傳送的參數'];
+
+if (empty($_POST['傳送的參數'])) { //如果是空值
+ echo ' 錯誤';
+ exit(); // 不在跑下面的程式
+}
+ echo $_POST&GET['傳送的參數'];
 ?>
 ```
 
@@ -70,8 +71,6 @@ if ($conn->connect_error) {
 }
 $conn->query('SET NAMES UTF8');
 $conn->query('SET time_zone = "+8:00"');
-
-=======
 //database的設定
 $conn->query('SET NAMES UTF8');
 $conn->query('SET time_zone = "+8:00"');
