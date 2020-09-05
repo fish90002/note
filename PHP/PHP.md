@@ -8,7 +8,7 @@ https://www.apachefriends.org/zh_tw/index.html
 
 變數
 
-```php
+```PHP
 $x = '123';
 ```
 
@@ -24,7 +24,7 @@ $x = '123';
 
 ### 取得參數
 
-```php
+```PHP
 $_GET['表單的name'];
 $_POST['表單的 name'];
 ```
@@ -38,9 +38,9 @@ $_POST['表單的 name'];
 </from>
 ```
 
-```php
+```PHP
 後端
-if (empty(\$\_POST['name'])) { //如果是空值
+if (empty($_POST['name'])) { //如果是空值
 echo ' 錯誤';
 exit(); // 不在跑下面的程式
 }
@@ -48,7 +48,7 @@ exit(); // 不在跑下面的程式
 
 ## 與 MySQL 連線
 
-```php
+```PHP
 $servername = '';
 $name = '';
 $password = '';
@@ -59,6 +59,10 @@ $conn = new mysqli('serve 的名稱','帳號','密碼','database')
 if ($conn->connect_error) {
    die('資料庫連線錯誤:' . $conn->connect_error); // 輸出文字後 後面的都不會執行
 }
+
+$conn->query('SET NAMES UTF8');
+$conn->query('SET time_zone = "+8:00"');
+
 ```
 
 ## 外部連接

@@ -16,6 +16,7 @@
 
 
 <style>
+/* reset */
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,7 @@
 a {
   text-decoration: none;
 }
+/* reset end*/
 
 /* breadcrumb */
 .breadcrumb {
