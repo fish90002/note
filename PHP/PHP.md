@@ -43,16 +43,11 @@ $_POST['表單的 name'];
 ```PHP
 後端
 <?php
-if (empty($_POST['name'])) { //如果是空值
-echo ' 錯誤';
+if (empty($_POST&GET['傳送的參數'])) { //如果是空值
+echo ' 錯誤'; //顯現錯誤
 exit(); // 不在跑下面的程式
 }
-
-if (empty($_POST['傳送的參數'])) { //如果是空值
- echo ' 錯誤';
- exit(); // 不在跑下面的程式
-}
- echo $_POST&GET['傳送的參數'];
+echo $_POST&GET['傳送的參數'];
 ?>
 ```
 
