@@ -4,7 +4,6 @@
 `
 git version
 `
-
 - 查詢設定列表 
 `git config --list`
 
@@ -64,7 +63,7 @@ git version
 - 刪除最近一次 commit，但保留異動內容
 `git reset --soft HEAD^`
  
-commit 後發現有幾個檔案忘了加入進去，想要補內容進去時
+- commit 後發現有幾個檔案忘了加入進去，想要補內容進去時
 `git commit --amend `
 
 分支
